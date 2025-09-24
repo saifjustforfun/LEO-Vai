@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LEO Vai - Contact </title>
+
+  <!-- Open Graph (Facebook) metadata for nice preview when shared -->
+  <meta property="og:title" content="আপনার নাম — যোগাযোগ ও সোশ্যাল লিংক">
+  <meta property="og:description" content="ফেসবুক পেজ থেকে ক্লিক করলে দেখার জন্য সরল ল্যান্ডিং পেজ: ফোন, ইমেল, ইনস্টাগ্রাম, টুইটার ও আরও।">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Your+Photo">
+  <meta property="og:type" content="website">
+
+  <!-- Basic styling (single file) -->
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--white:#f8fafc}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#071226 0%,#02111a 100%);color:var(--white);display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+    .card{width:100%;max-width:760px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .top{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;overflow:hidden;flex:0 0 96px;border:2px solid rgba(255,255,255,0.06)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:20px}
+    p.role{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .about{margin-top:18px;color:var(--muted);font-size:15px}
+    .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);text-decoration:none;color:var(--white);font-weight:600}
+    .btn svg{width:18px;height:18px;opacity:0.95}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#04202a;border:0}
+    .contact{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive tweaks */
+    @media (max-width:420px){.top{gap:12px}.avatar{width:76px;height:76px;border-radius:12px}.card{padding:18px}}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="top">
+      <div class="avatar"
+      </div>
+      <div>
+        <h1 id="name">LEO Vai</h1>
+        <div class="small">Facebook page: <a id="fbPage" href="#" style="color:var(--accent);text-decoration:none" target="_blank">facebook.com/yourpage</a></div>
+        <p class="role" id="tagline"> — Examples: Photographer • Content creator</p>
+      </div>
+    </div>
+
+    <p class="about" id="about">Itz LEO Vai</p>
+
+    <div class="links">
+      <a class="btn primary" id="btnMessage" href="#" target="_blank" rel="noopener noreferrer">
+        <!-- message icon -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="currentColor"/></svg>
+        message / learn more
+      </a>
+
+      <a class="btn" id="btnCall" href="tel:+8801000000000">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.97.36 1.92.72 2.82a2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6 6l1.26-1.26a2 2 0 0 1 2.11-.45c.9.36 1.85.6 2.82.72A2 2 0 0 1 22 16.92z" fill="currentColor"/></svg>
+        contact me
+      </a>
+
+      <a class="btn" id="btnEmail" href="mailto:you@example.com">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 6.01V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6.01" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        email
+      </a>
+
+      <a class="btn" id="btnInsta" href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="1.2"/><path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        Instagram
+      </a>
+
+      <a class="btn" id="btnTwitter" href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-2.3.86-3.5 1.1A4.48 4.48 0 0 0 16.1 0c-2.5 0-4.5 2.24-4 4.8A12.94 12.94 0 0 1 1.64 1S-.5 6.36 4.09 9.7a4.5 4.5 0 0 1-2-.55v.06c0 2.18 1.5 4 3.7 4.4a4.52 4.52 0 0 1-2 .08 4.5 4.5 0 0 0 4.2 3.16A9 9 0 0 1 0 19.54 12.7 12.7 0 0 0 6.88 21c8.29 0 12.83-7.14 12.83-13.33 0-.2 0-.42-.02-.63A9.22 9.22 0 0 0 23 3z" fill="currentColor"/></svg>
+        টুইটার
+      </a>
+
+      <a class="btn" id="btnMore" href="#more" onclick="document.getElementById('more').scrollIntoView({behavior:'smooth'})">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        আরও দেখুন
+      </a>
+    </div>
+
+    <div class="contact" id="more">
+      
+    </div>
+
+    <footer>
+      © <span id="year"></span> <span id="owner">আপনার নাম</span> — <span class="small">সকল অধিকার সংরক্ষিত</span>
+    </footer>
+  </main>
+
+  <script>
+    // small helper to populate defaults - change these values as you like
+    const data = {
+      name: 'LEO  Vai',
+      tagline: 'Photographer • Content creator',
+      about: 'Itz LEO Vai',
+      fbPage: 'https://facebook.com/profile.php?id=61581012855427',
+      photo: 'https://via.placeholder.com/400x400.png?text=Your+Photo',
+      phone: '+8801305686518',
+      email: 'leovaiofficial@gmail.com',
+      insta: 'https://instagram.com/itzleovai?igsh=Z20wemRha3VkemM=',
+      twitter: 'https://x.com/ItzLEOVai?t=MEcyJT9ud5cxml5j7qdaNA&s=09',
+      location: 'Dhaka, Bangladesh'
+    }
+
+    // apply to DOM
+    document.getElementById('name').textContent = data.name
+    document.getElementById('tagline').textContent = data.tagline
+    document.getElementById('about').textContent = data.about
+    document.getElementById('fbPage').href = data.fbPage
+    document.getElementById('fbPage').textContent = data.fbPage.replace('https://','').replace('http://','')
+    document.querySelector('.avatar img').src = data.photo
+    document.getElementById('btnMessage').href = data.fbPage
+    document.getElementById('btnCall').href = 'tel:' + data.phone
+    document.getElementById('btnEmail').href = 'mailto:' + data.email
+    document.getElementById('btnInsta').href = data.insta
+    document.getElementById('btnTwitter').href = data.twitter
+    document.getElementById('location').textContent = data.location
+    document.getElementById('owner').textContent = data.name
+    document.getElementById('year').textContent = new Date().getFullYear()
+
+    // If you share this page on Facebook, OG tags above help. To change image, update the og:image meta or host a photo.
+  </script>
+</body>
+</html>
